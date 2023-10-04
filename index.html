@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resposive Personal Portfolio Design</title>
+
+  <!-- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <!-- custom css-->
+  <link rel="stylesheet" href="./style.css">
+  <!--Email Send js-->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("O2qzXcaoOzfHwxRSh");
+   })();
+</script>
+</head>
+<body>
+
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, it's Me</h3>
+      <h1>Ajsal k</h1>
+      <h3>And I'am a <span>Fullstack Developer</span></h3>
+      <p>I'm a passionate and hardworking full stack developer who recently completed my plus two education. With a strong determination to pursue my dreams, I have successfully transitioned into the world of web development. I take great pride in my work and have already completed several projects that showcase my skills in crafting intuitive and visually appealing websites.</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com/ajsal.ktpr?mibextid=2JQ9oc"><i class='bx bxl-facebook'></i></a>
+        <a href="https://instagram.com/ajssssll.__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="https://wa.me/9895112738"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+    <div class="home-image">
+      <img src="WhatsApp Image 2023-10-03 at crop.jpg" alt="" style="height:50rem; width: 45rem;">
+    </div>
+  </section>
+
+  <!-- about section desing -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/WhatsApp Image 2023-10-03 at 14.28.58_0820403a.jpg" alt="My-profile-picture">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Fullstack Developer</h3>
+      <p>Hello, I'm Ajsal, a passionate and determined individual hailing from Perinthalmanna. After completing my plus two education, I embarked on an exciting journey by joining Bridgeon, a self-learning platform where industrial experts guide and review our projects.
+
+        Throughout my time at Bridgeon, I have enthusiastically taken on various projects, and I'm proud to say that I've successfully completed several of them. My skills encompass a diverse range, including expertise in <span>HTML, CSS, JavaScript, C, and Java.</span>
+        </p>
+    </div>
+  </section>
+
+  <!-- portfolio Project design section -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="images/download.jpeg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <a href="/Personal Website/images/Screenshot 2023-10-03 140020.png"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <div class="portfolio-layer">
+          <h4>Team Work</h4>
+          <a href="/Personal Website/images/Screenshot 2023-10-03 141746.png"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="https://wallpaperaccess.com/full/1947484.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Support</h4>
+          <a href="/Personal Website/images/Screenshot 2023-10-03 073704.png"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form onsubmit="sendMail(); reset(); return false;">
+      <div class="input-box">
+        <input id="fullname" type="text" placeholder="Full Name" name="name" required>
+        <input id="email_id" type="email" placeholder="Email Address" name="email" required ">
+        
+      </div>
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn" onclick="SendMail()">
+    </form>
+  </section>
+
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Ajsal | All rights reserved. </p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Alert Email send-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+  <!-- custom js-->
+  <script src="script1.js"></script>
+</body>
+</html>
